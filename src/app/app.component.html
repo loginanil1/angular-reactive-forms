@@ -1,0 +1,7 @@
+<hello name="{{ profileForm.value.firstName }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<form [formGroup]="profileForm">
+  <input type="text" formControlName='firstName' />
+</form>
+<p>Form Value: {{ profileForm.value | json }}</p>
+<p>Form Status: {{ profileForm.status | json }}</p>
